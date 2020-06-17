@@ -1,0 +1,45 @@
+Data Products Final Project 
+Diamond Price Application - Presentation
+========================================================
+author: Harini Asaithambi
+date: 18/06/2020
+autosize: true
+
+
+Overview 
+========================================================
+This pitch presentation is for explaining the "Diamond Price Application" 
+
+This "Diamond Price Application" Shiny project is for predicting the price of a diamond based on the user input values of 
+- Carat
+- Cut
+- Color
+
+Data details
+========================================================
+- "diamonds"data set, from "ggplot2" package is used for this Shiny app project 
+- Main predictors are carat, cut and color. 
+
+```{r}
+library(ggplot2)
+diamonds
+```
+
+Approach
+========================================================
+- UI sidebar panel is designed to have a slider for carat input, radio buttons for cut and color of the diamond. 
+- Once the values are set and submit is clicked, server does the prediction and renders the plot along with the predicted price value
+- Linear Model is used to predict the price of the diamonds
+- ggplot2 is used for the plot 
+- Predicted price is displayed in the main panel just below the plot
+
+
+
+Summary
+========================================================
+
+- Diamond Prediction Application app can be found at : 
+  https://inirah.shinyapps.io/DataProducts_FinalProject/
+
+- ui.R and server.R files can be found at:
+  https://github.com/HariniAsaithambi/CourseEraDataProducts
